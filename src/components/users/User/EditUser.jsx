@@ -15,13 +15,15 @@ const mapState = (state) => ({
 
 
 class EditUser extends Component {
-    
-    state = {
-        name: '',
-        occupation: '',
-        email: '',
-        bio: '',
-        
+    constructor(props) {
+        super(props)
+        this.state = {
+            name: '',
+            occupation: '',
+            email: '',
+            bio: '',
+            
+        }
     }
 
     componentWillReceiveProps(nextProps, nextState) {
