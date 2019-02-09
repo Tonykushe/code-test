@@ -22,15 +22,15 @@ const TextInput = ({name,placeholder,value,label,error,info,type,onChange,disabl
     )
 }
 
-// TextInput.propTypes = {
-//     name: PropTypes.string.isRequired,
-//     placeholder: PropTypes.string,
-//     value: PropTypes.string.isRequired,
-//     info: PropTypes.string,
-//     type: PropTypes.string.isRequired,
-//     onChange: PropTypes.func.isRequired,
-//     disabled: PropTypes.string,
-// }
+TextInput.propTypes = {
+    name: PropTypes.string.isRequired,
+    placeholder: PropTypes.string,
+    value: PropTypes.string.isRequired,
+    info: PropTypes.string,
+    type: PropTypes.string.isRequired,
+    onChange: PropTypes.func.isRequired,
+    disabled: PropTypes.string,
+}
 
 TextInput.defaultProps = {
     type: 'text'

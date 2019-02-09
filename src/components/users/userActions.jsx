@@ -38,10 +38,3 @@ export const editUser = (userData) => dispatch => {
        
 }
 
-// export const updateContact = contact => async dispatch => {
-//     const res = await axios.put(`https://jsonplaceholder.typicode.com/users/${contact.id}`,contact);
-//     dispatch({
-//         type: UPDATE_CONTACT,
-//         payload: res.data
-//     });
-// };

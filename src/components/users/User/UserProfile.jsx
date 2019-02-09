@@ -48,4 +48,9 @@ class UserProfile extends Component {
     }
 }
 
+UserProfile.propTypes = {
+  user: PropTypes.object.isRequired,
+  getUser: PropTypes.func.isRequired
+};
+
 export default connect(mapState, actions)(UserProfile);

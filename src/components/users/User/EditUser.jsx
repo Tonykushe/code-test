@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from "react-redux";
-import { withRouter, Link } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 import { editUser, getUser } from "../userActions";
 import TextInput from '../../../app/common/form/TextInput'
 
@@ -78,9 +78,7 @@ class EditUser extends Component {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6 m-auto">
-                            <Link to="/dashboard" className="btn btn-light">
-                                Go Back
-                            </Link>
+                            
                             <h1 className="display-4 text-center">Edit User</h1>
                             <form onSubmit={this.onSubmit}>
                                 <TextInput
