@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 
-const UserItem = ({user}) => {
+const ProfileItem = ({user}) => {
     return (
-      <div className="container">
+        <div className="container">
             <div className="row">
                 <div className="col-lg-4 mt-4 ml-auto mr-auto">
                     <div className="card">
@@ -12,15 +12,16 @@ const UserItem = ({user}) => {
                             <h5 className="card-title">Occupation: {user.occupation}</h5>
                             <h5 className="card-title">Email: {user.email}</h5>
                             <p className="card-text">Bio: {user.bio}</p>
-                            <Link to={`/users/${user.id}`} className="btn btn-info" >
-                                View Profile
+                            <Link to={`/edit-user/${user.id}`} className="btn btn-info" >
+                                Edit User
                             </Link>
+
                         </div>
                     </div>
                 </div>
             </div>
-      </div>
-    );
+        </div>
+    )
 }
 
-export default UserItem
+export default ProfileItem
